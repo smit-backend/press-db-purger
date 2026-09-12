@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/press-db-purger",
+    "description": "High-performance database optimization plugin to index tables, purge orphaned metadata/revisions, and reduce overhead.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\Pressdbpurger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\Pressdbpurger\\PackageServiceProvider"
+            ]
+        }
+    }
+}
